@@ -7,20 +7,22 @@ import { useState } from 'react'
 import data from '../data.json'
 
 export const quiz = () => {
-    const results = data.results;
+
+  const results = data.results;
+
   return (
     <div className="page page-home bg-image">
     <div className='container quiz-container'>
       <div className="page-category">
         <img src={LOGO} className='logo'></img>
             <div className='flex-row'>
-                <h3>Category: {data.category}</h3>
-                <p>1 out of 10</p>
+                <h3>Category: {results.category}</h3>
+                <p>1 out of {results.length}</p>
             </div>
       </div>
       <hr></hr>
       <div className="questions">
-        <p>{data.question}</p>
+        <p>{results.question}</p>
       </div>
       <hr></hr>
       <div className="btn">

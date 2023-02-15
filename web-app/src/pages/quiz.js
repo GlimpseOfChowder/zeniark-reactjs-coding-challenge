@@ -4,21 +4,23 @@ import LOGO from '../images/logo.png'
 import { BsCheck } from "react-icons/bs"
 import { BsX } from "react-icons/bs"
 import { useState } from 'react'
+import data from '../data.json'
 
-const quiz = () => {
+export const quiz = () => {
+    const results = data.results;
   return (
     <div className="page page-home bg-image">
     <div className='container quiz-container'>
       <div className="page-category">
         <img src={LOGO} className='logo'></img>
             <div className='flex-row'>
-                <h3>Category: Geography</h3>
+                <h3>Category: {data.category}</h3>
                 <p>1 out of 10</p>
             </div>
       </div>
       <hr></hr>
       <div className="questions">
-        <p>You will be presented with 10 True or False questions.</p>
+        <p>{data.question}</p>
       </div>
       <hr></hr>
       <div className="btn">
@@ -33,5 +35,6 @@ const quiz = () => {
   </div>
   )
 }
+
 
 export default quiz

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+
+body {
+  position: relative;
+}
+
 .App {
   background-color: #eee;
   min-height: 100vh;
@@ -7,13 +13,15 @@
 }
 
 .page {
-  width: 600px;
-  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 40%;
   margin: 0 auto;
-  min-height: 100vh;
-  padding: 2rem;
-  background: #fff;
-
+  height: 45%;
+  padding: 10rem;
+  border-radius: 10px;
   &-title h1 {
     text-align: center;
   }
@@ -23,4 +31,123 @@
     justify-content: center;
     margin-top: 2rem;
   }
+}
+
+.container{
+  background: white;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.page-body {
+  font-size: 12px;
+}
+
+.bg-image {
+  background-image: url("../images/bg.png");
+  background-size: contain;
+}
+
+.cname {
+  width: 30%;
+  height: auto;
+}
+
+.highlights {
+  background: #085696;
+  display: inline-block;
+  font-size: 18px;
+  width: auto;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-start {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-start > a {
+  color: #085696;
+}
+
+.quiz-container {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.page-category {
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: contents;
+}
+
+.flex-row > h3 {
+  margin-right: 50%;
+}
+
+.flex-row > p {
+  font-weight: bold;
+}
+
+hr {
+  border-top: white;
+  height: 1px;
+}
+
+.questions {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.btn {
+  padding-top: 20px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.btn-true {
+  color: white;
+  background: #4fbd1b;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  width: 20%;
+  border-radius: 8px;
+}
+
+.btn-false {
+  color: white;
+  background: #e04e10;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  width: 20%;
+  border-radius: 8px;
+}
+
+.icons {
+  font-size: 18px;
+  vertical-align: middle;
 }

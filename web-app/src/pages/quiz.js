@@ -33,10 +33,10 @@ export default function Quiz() {
       <hr></hr>
       <div className="btn" onClick={btnClickHandler}>
         <button className='btn-true'>
-          <BsCheck className='icons'></BsCheck>{results[currentQuestion].correct_answer}
+          <BsCheck className='icons'></BsCheck>True
         </button>
         <button className='btn-false'>
-          <BsX className='icons'></BsX>{results[currentQuestion].incorrect_answers}
+          <BsX className='icons'></BsX>False
         </button>
       </div>
     </div>

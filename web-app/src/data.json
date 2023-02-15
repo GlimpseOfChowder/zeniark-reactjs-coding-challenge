@@ -4,7 +4,7 @@
         "category": "Animals",
         "type": "boolean",
         "difficulty": "easy",
-        "question": "A slug&rsquo;s blood is green.",
+        "question": "A slug's blood is green.",
         "correct_answer": "True",
         "incorrect_answers": [
           "False"
@@ -14,7 +14,7 @@
         "category": "Entertainment: Video Games",
         "type": "boolean",
         "difficulty": "easy",
-        "question": "&quot;Half-Life 2&quot; runs on the Source Engine.",
+        "question": "Half-Life 2; runs on the Source Engine.",
         "correct_answer": "True",
         "incorrect_answers": [
           "False"
@@ -34,7 +34,7 @@
         "category": "Entertainment: Video Games",
         "type": "boolean",
         "difficulty": "easy",
-        "question": "In &quot;Sonic Adventure&quot;, you are able to transform into Super Sonic at will after completing the main story.",
+        "question": "In Sonic Adventure, you are able to transform into Super Sonic at will after completing the main story.",
         "correct_answer": "False",
         "incorrect_answers": [
           "True"
@@ -74,10 +74,10 @@
         "category": "Entertainment: Music",
         "type": "boolean",
         "difficulty": "easy",
-        "question": "The song &quot;Stronger Than You&quot; is a single by Estelle, who played Garnet in Steven Universe.",
-        "correct_answer": "True",
+        "question": "Pink Venom is Twice's new music.",
+        "correct_answer": "False",
         "incorrect_answers": [
-          "False"
+          "True"
         ]
       },
       {
@@ -91,13 +91,13 @@
         ]
       },
       {
-        "category": "Entertainment: Music",
+        "category": "Entertainment: Comic Book Movies",
         "type": "boolean",
         "difficulty": "easy",
-        "question": "Scatman John&#039;s real name was John Paul Larkin.",
-        "correct_answer": "True",
+        "question": "Superman is a marvel character",
+        "correct_answer": "False",
         "incorrect_answers": [
-          "False"
+          "True"
         ]
       }
     ]

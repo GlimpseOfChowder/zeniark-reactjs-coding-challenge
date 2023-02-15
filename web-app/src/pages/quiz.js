@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import LOGO from '../images/logo.png'
 import { BsCheck } from "react-icons/bs"
 import { BsX } from "react-icons/bs"
+import { useState } from 'react'
 
 const quiz = () => {
   return (

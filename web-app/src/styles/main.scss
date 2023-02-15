@@ -123,8 +123,8 @@ hr {
 
 .btn {
   padding-top: 20px;
-  justify-content: space-evenly;
   display: flex;
+  justify-content: center;
 }
 
 .btn-true {
@@ -135,6 +135,7 @@ hr {
   padding: 10px;
   width: 20%;
   border-radius: 8px;
+  margin: 10px;
 }
 
 .btn-false {
@@ -145,6 +146,7 @@ hr {
   padding: 10px;
   width: 20%;
   border-radius: 8px;
+  margin: 10px;
 }
 
 .icons {

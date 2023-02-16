@@ -14,7 +14,7 @@ export default function Quiz() {
 	const [score, setScore] = useState(0);
 
 	const btnOnclickAnswer = (isCorrect) => {
-		if (isCorrect === results[currentQuestion].isCorrect) {
+		if (isCorrect === true || isCorrect === false) {
 			setScore(score + 1);
 		}
 
@@ -69,7 +69,7 @@ export default function Quiz() {
           <div className="questions">
             <p>{results[currentQuestion].question}</p>
           </div>
-          
+
           <hr></hr>
           <div className="btn"  onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
             <button className='btn-true'>

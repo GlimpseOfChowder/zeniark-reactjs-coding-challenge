@@ -47,8 +47,8 @@ export default function Quiz() {
               <h4>Your Score</h4>
             </div>
             <hr></hr>
-            <ol>
-              <li></li>
+            <ol className='lists'>
+            <li>{results[1].question}</li>
             </ol>
             <hr></hr>
             <button className='play-again' onClick={() => playAgain()}>PLAY AGAIN</button>

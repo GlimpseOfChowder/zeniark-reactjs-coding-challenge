@@ -88,6 +88,7 @@ body {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+  text-align: center;
 }
 
 .quiz-container {
@@ -181,8 +182,6 @@ hr {
   vertical-align: middle;
 }
 
-
-
 .score-section {
   justify-content: center;
   align-items: center;
@@ -191,4 +190,8 @@ hr {
 
 .score-section > h2, .score-section > h4 {
   margin: auto;
+}
+
+.lists {
+  float: left;
 }

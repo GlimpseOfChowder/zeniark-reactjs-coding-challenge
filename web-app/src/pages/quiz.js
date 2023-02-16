@@ -17,7 +17,7 @@ export default function Quiz() {
 
 		const nextQuestion = currentQuestion + 1;
 
-		if (nextQuestion < results.length) {
+		if (nextQuestion < results.slice(0,10).length) {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
@@ -25,8 +25,9 @@ export default function Quiz() {
 	};
 
   const playAgain = () => {
+    //const randomizedQuestion = Math.floor(Math.random * results.length);
+    setCurrentQuestion(0)
     setScore(0);
-    setCurrentQuestion(0);
     setShowScore(false);
   }
   
@@ -43,21 +44,20 @@ export default function Quiz() {
             </div>
             <hr></hr>
             <div className='score-section'>
-              <h2>{score} / {results.length}</h2>
+              <h2>{score} / {results.slice(0,10).length}</h2>
               <h4>Your Score</h4>
             </div>
             <hr></hr>
             <ol className='lists'>
-            <li>{results[0].question}</li>
-            <li>{results[1].question}</li>
-            <li>{results[2].question}</li>
-            <li>{results[3].question}</li>
-            <li>{results[4].question}</li>
-            <li>{results[5].question}</li>
-            <li>{results[6].question}</li>
-            <li>{results[7].question}</li>
-            <li>{results[8].question}</li>
-            <li>{results[9].question}</li>
+            {
+              results.map(record => {
+                return(
+                  <li>{record.question}
+                    <h5>The correct answer is {record.correct_answer}</h5>
+                  </li>
+                )
+              })
+            }
             </ol>
             <hr></hr>
             <button className='play-again' onClick={() => playAgain()}>PLAY AGAIN</button>
@@ -69,7 +69,7 @@ export default function Quiz() {
             <img src={LOGO} className='logo' alt=''></img>
                 <div className='flex-row'>
                     <h3>Category: {results[currentQuestion].category}</h3>
-                    <p>{currentQuestion + 1} out of {results.length}</p>
+                    <p>{currentQuestion + 1} out of {results.slice(0,10).length}</p>
                 </div>
           </div>
           <hr></hr>

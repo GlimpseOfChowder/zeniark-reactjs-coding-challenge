@@ -7,7 +7,7 @@ export default function HomePage() {
       <div className="page page-home bg-image">
       <div className='container'>
         <div className="page-title">
-          <img src={CNAME} className='cname'></img>
+          <img src={CNAME} className='cname' alt=""></img>
           <h1>Welcome to the Trivia Challenge!</h1>
         </div>
         <div className="page-body">

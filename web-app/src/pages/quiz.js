@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import LOGO from '../images/logo.png'
 import { BsCheck } from "react-icons/bs"
 import { BsX } from "react-icons/bs"
@@ -13,8 +12,8 @@ export default function Quiz() {
   const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
-	const btnOnclickAnswer = (isCorrect) => {
-		if (isCorrect === true || isCorrect === false) {
+	const btnOnclickAnswer = (correct_answer) => {
+		if (correct_answer === results.correct_answer) {
 			setScore(score + 1);
 		}
 
@@ -38,15 +37,16 @@ export default function Quiz() {
     <div className='container quiz-container'>
     
     {showScore ? ( //Show results tab
-				<div className='score-section'>
+				<div>
             <div className='final-result'>
-              <img src={LOGO} className='logo'></img>
+              <img src={LOGO} className='logo' alt=""></img>
               <h3>Final Results</h3>
             </div>
             <hr></hr>
-            
-					  <h3>{score} / {results.length}</h3>
-            <h4>Your Score</h4>
+            <div className='score-section'>
+              <h2>{score} / {results.length}</h2>
+              <h4>Your Score</h4>
+            </div>
             <hr></hr>
             <ol>
               <li>{results[currentQuestion].question}</li>
@@ -58,7 +58,7 @@ export default function Quiz() {
         ( //Show questionnaire
           <>
           <div className="page-category">
-            <img src={LOGO} className='logo'></img>
+            <img src={LOGO} className='logo' alt=''></img>
                 <div className='flex-row'>
                     <h3>Category: {results[currentQuestion].category}</h3>
                     <p>{currentQuestion + 1} out of {results.length}</p>
@@ -71,11 +71,11 @@ export default function Quiz() {
           </div>
 
           <hr></hr>
-          <div className="btn"  onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
-            <button className='btn-true'>
+          <div className="btn">
+            <button className='btn-true' onClick={() => btnOnclickAnswer(results[currentQuestion].question === results.correct_answer)}>
               <BsCheck className='icons'></BsCheck>True
             </button>
-            <button className='btn-false'>
+            <button className='btn-false' onClick={() => btnOnclickAnswer(results[currentQuestion].question === results.correct_answers)}>
               <BsX className='icons'></BsX>False
             </button>
           </div>

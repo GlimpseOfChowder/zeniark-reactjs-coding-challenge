@@ -48,7 +48,16 @@ export default function Quiz() {
             </div>
             <hr></hr>
             <ol className='lists'>
+            <li>{results[0].question}</li>
             <li>{results[1].question}</li>
+            <li>{results[2].question}</li>
+            <li>{results[3].question}</li>
+            <li>{results[4].question}</li>
+            <li>{results[5].question}</li>
+            <li>{results[6].question}</li>
+            <li>{results[7].question}</li>
+            <li>{results[8].question}</li>
+            <li>{results[9].question}</li>
             </ol>
             <hr></hr>
             <button className='play-again' onClick={() => playAgain()}>PLAY AGAIN</button>

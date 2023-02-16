@@ -53,7 +53,7 @@ export default function Quiz() {
               results.map(record => {
                 return(
                   <li>{record.question}
-                    <h5>The correct answer is {record.correct_answer}</h5>
+                    <h5 className='list'>The correct answer is<span style={{color: "#085696"}}>{record.correct_answer}</span>.</h5>
                   </li>
                 )
               })

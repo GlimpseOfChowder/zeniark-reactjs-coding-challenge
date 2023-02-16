@@ -202,7 +202,20 @@ hr {
   border-bottom: 1px solid rgba(243, 239, 239, 0.562);
 }
 
-.lists > h5 {
+.list {
   display: flex;
-  margin: 0;
+  margin: auto;
+  color: rgb(209 208 208);
+}
+
+.true {
+  color: #4fbd1b;
+}
+
+.false {
+  color: #e04e10;
+}
+
+span {
+  margin-left: 4px;
 }

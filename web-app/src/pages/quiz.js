@@ -13,8 +13,8 @@ export default function Quiz() {
   const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
-	const btnOnclickAnswer = (correct_answer) => {
-		if (correct_answer === results[currentQuestion.correct_answer]) {
+	const btnOnclickAnswer = (isCorrect) => {
+		if (isCorrect === true) {
 			setScore(score + 1);
 		}
 
@@ -47,32 +47,33 @@ export default function Quiz() {
             <h4>Your Score</h4>
             <button onClick={() => playAgain()}>PLAY AGAIN</button>
 				</div>
-			) : ( 
-        <>
-        <div className="page-category">
-          <img src={LOGO} className='logo'></img>
-              <div className='flex-row'>
-                  <h3>Category: {results[currentQuestion].category}</h3>
-                  <p>{currentQuestion + 1} out of {results.length}</p>
-              </div>
-        </div>
-        <hr></hr>
+			) : 
+        ( 
+          <>
+          <div className="page-category">
+            <img src={LOGO} className='logo'></img>
+                <div className='flex-row'>
+                    <h3>Category: {results[currentQuestion].category}</h3>
+                    <p>{currentQuestion + 1} out of {results.length}</p>
+                </div>
+          </div>
+          <hr></hr>
 
-        <div className="questions">
-          <p>{results[currentQuestion].question}</p>
-        </div>
-        
-        <hr></hr>
-        <div className="btn"   onClick={btnOnclickAnswer(results[currentQuestion].correct_answer)}>
-          <button className='btn-true'>
-            <BsCheck className='icons'></BsCheck>True
-          </button>
-          <button className='btn-false'>
-            <BsX className='icons'></BsX>False
-          </button>
-        </div>
-      </>
-      )}
+          <div className="questions">
+            <p>{results[currentQuestion].question}</p>
+          </div>
+
+          <hr></hr>
+          <div className="btn">
+            <button className='btn-true' onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
+              <BsCheck className='icons'></BsCheck>True
+            </button>
+            <button className='btn-false' onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
+              <BsX className='icons'></BsX>False
+            </button>
+          </div>
+        </>
+        )}
     </div>
   </div>
   )

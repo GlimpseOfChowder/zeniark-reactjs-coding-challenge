@@ -1,7 +1,5 @@
 import React from 'react'
 import LOGO from '../images/logo.png'
-import { BsCheck } from "react-icons/bs"
-import { BsX } from "react-icons/bs"
 import { useState } from 'react'
 import data from '../data.json'
 
@@ -12,9 +10,9 @@ export default function Quiz() {
   const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
-	const btnOnclickAnswer = (isCorrect) => {
+	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
-			alert('may tama ka')
+			setScore(score + 1);
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -32,6 +30,7 @@ export default function Quiz() {
     setShowScore(false);
   }
   
+
   return (
     <div className="page page-home bg-image">
     <div className='container quiz-container'>
@@ -49,7 +48,7 @@ export default function Quiz() {
             </div>
             <hr></hr>
             <ol>
-              <li>{results[currentQuestion].question}</li>
+              <li></li>
             </ol>
             <hr></hr>
             <button className='play-again' onClick={() => playAgain()}>PLAY AGAIN</button>
@@ -72,10 +71,12 @@ export default function Quiz() {
 
           <hr></hr>
           <div className="btn">
-            {results[currentQuestion].answerOptions.map((answerOption) => (
-                <button onClick={() => btnOnclickAnswer(answerOption.isCorrect)}>{answerOption.answerText}</button>
-              ))}
-          </div>
+          {results[currentQuestion].answerOptions.map((answerOption) => (  
+							<button className='btn-custom' onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
+              {answerOption.answerText}
+              </button>
+					))}
+          </div> 
         </>
         )}
     </div>

@@ -10,8 +10,8 @@
           "False"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "True"},
-          { "answerText": "False", "isCorrect": "False"}
+          { "answerText": "True", "isCorrect": true},
+          { "answerText": "False", "isCorrect": false}
         ]
       },
       {
@@ -24,8 +24,8 @@
           "False"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "True"},
-          { "answerText": "False", "isCorrect": "False"}
+          { "answerText": "True", "isCorrect": true},
+          { "answerText": "False", "isCorrect": false}
         ]
       },
       {
@@ -38,8 +38,8 @@
           "True"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "False"},
-          { "answerText": "False", "isCorrect": "True"}
+          { "answerText": "True", "isCorrect": false},
+          { "answerText": "False", "isCorrect": true}
         ]
       },
       {
@@ -52,8 +52,8 @@
           "True"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "False"},
-          { "answerText": "False", "isCorrect": "True"}
+          { "answerText": "True", "isCorrect": false},
+          { "answerText": "False", "isCorrect": true}
         ]
       },
       {
@@ -66,8 +66,8 @@
           "False"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "True"},
-          { "answerText": "False", "isCorrect": "False"}
+          { "answerText": "True", "isCorrect": true},
+          { "answerText": "False", "isCorrect": false}
         ]
       },
       {
@@ -80,8 +80,8 @@
           "False"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "True"},
-          { "answerText": "False", "isCorrect": "False"}
+          { "answerText": "True", "isCorrect": true},
+          { "answerText": "False", "isCorrect": false}
         ]
       },
       {
@@ -94,8 +94,8 @@
           "False"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "True"},
-          { "answerText": "False", "isCorrect": "False"}
+          { "answerText": "True", "isCorrect": true},
+          { "answerText": "False", "isCorrect": false}
         ]
       },
       {
@@ -108,8 +108,8 @@
           "True"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "False"},
-          { "answerText": "False", "isCorrect": "True"}
+          { "answerText": "True", "isCorrect": false},
+          { "answerText": "False", "isCorrect": true}
         ]
       },
       {
@@ -122,8 +122,8 @@
           "True"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "False"},
-          { "answerText": "False", "isCorrect": "True"}
+          { "answerText": "True", "isCorrect": false},
+          { "answerText": "False", "isCorrect": true}
         ]
       },
       {
@@ -136,8 +136,8 @@
           "True"
         ],
         "answerOptions": [
-          { "answerText": "True", "isCorrect": "False"},
-          { "answerText": "False", "isCorrect": "True"}
+          { "answerText": "True", "isCorrect": false},
+          { "answerText": "False", "isCorrect": true}
         ]
       }
     ]

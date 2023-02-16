@@ -59,7 +59,6 @@ export default function Quiz() {
               })
             }
             </ol>
-            <hr></hr>
             <button className='play-again' onClick={() => playAgain()}>PLAY AGAIN</button>
 				</div>
 			) : 

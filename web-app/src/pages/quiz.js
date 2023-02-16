@@ -14,7 +14,7 @@ export default function Quiz() {
 	const [score, setScore] = useState(0);
 
 	const btnOnclickAnswer = (isCorrect) => {
-		if (isCorrect === true) {
+		if (isCorrect === results[currentQuestion].isCorrect) {
 			setScore(score + 1);
 		}
 
@@ -36,19 +36,26 @@ export default function Quiz() {
   return (
     <div className="page page-home bg-image">
     <div className='container quiz-container'>
-    {showScore ? (
+    
+    {showScore ? ( //Show results tab
 				<div className='score-section'>
             <div className='final-result'>
               <img src={LOGO} className='logo'></img>
-              <h2>Final Result</h2>
+              <h3>Final Results</h3>
             </div>
+            <hr></hr>
             
 					  <h3>{score} / {results.length}</h3>
             <h4>Your Score</h4>
-            <button onClick={() => playAgain()}>PLAY AGAIN</button>
+            <hr></hr>
+            <ol>
+              <li>{results[currentQuestion].question}</li>
+            </ol>
+            <hr></hr>
+            <button className='play-again' onClick={() => playAgain()}>PLAY AGAIN</button>
 				</div>
 			) : 
-        ( 
+        ( //Show questionnaire
           <>
           <div className="page-category">
             <img src={LOGO} className='logo'></img>
@@ -62,13 +69,13 @@ export default function Quiz() {
           <div className="questions">
             <p>{results[currentQuestion].question}</p>
           </div>
-
+          
           <hr></hr>
-          <div className="btn">
-            <button className='btn-true' onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
+          <div className="btn"  onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
+            <button className='btn-true'>
               <BsCheck className='icons'></BsCheck>True
             </button>
-            <button className='btn-false' onClick={() => btnOnclickAnswer(results[currentQuestion].isCorrect)}>
+            <button className='btn-false'>
               <BsX className='icons'></BsX>False
             </button>
           </div>

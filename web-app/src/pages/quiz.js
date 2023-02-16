@@ -12,9 +12,9 @@ export default function Quiz() {
   const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
-	const btnOnclickAnswer = (correct_answer) => {
-		if (correct_answer === results.correct_answer) {
-			setScore(score + 1);
+	const btnOnclickAnswer = (isCorrect) => {
+		if (isCorrect) {
+			alert('may tama ka')
 		}
 
 		const nextQuestion = currentQuestion + 1;
@@ -72,12 +72,9 @@ export default function Quiz() {
 
           <hr></hr>
           <div className="btn">
-            <button className='btn-true' onClick={() => btnOnclickAnswer(results[currentQuestion].question === results.correct_answer)}>
-              <BsCheck className='icons'></BsCheck>True
-            </button>
-            <button className='btn-false' onClick={() => btnOnclickAnswer(results[currentQuestion].question === results.correct_answers)}>
-              <BsX className='icons'></BsX>False
-            </button>
+            {results[currentQuestion].answerOptions.map((answerOption) => (
+                <button onClick={() => btnOnclickAnswer(answerOption.isCorrect)}>{answerOption.answerText}</button>
+              ))}
           </div>
         </>
         )}

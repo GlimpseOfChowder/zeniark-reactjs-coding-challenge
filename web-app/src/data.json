@@ -6,9 +6,12 @@
         "difficulty": "easy",
         "question": "A slug's blood is green.",
         "correct_answer": "True",
-        "isCorrect": "True",
         "incorrect_answers": [
           "False"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "True"},
+          { "answerText": "False", "isCorrect": "False"}
         ]
       },
       {
@@ -17,9 +20,12 @@
         "difficulty": "easy",
         "question": "Half-Life 2; runs on the Source Engine.",
         "correct_answer": "True",
-        "isCorrect": "True",
         "incorrect_answers": [
           "False"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "True"},
+          { "answerText": "False", "isCorrect": "False"}
         ]
       },
       {
@@ -28,9 +34,12 @@
         "difficulty": "easy",
         "question": "In Kill La Kill, the weapon of the main protagonist is a katana. ",
         "correct_answer": "False",
-        "isCorrect": "False",
         "incorrect_answers": [
           "True"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "False"},
+          { "answerText": "False", "isCorrect": "True"}
         ]
       },
       {
@@ -39,9 +48,12 @@
         "difficulty": "easy",
         "question": "In Sonic Adventure, you are able to transform into Super Sonic at will after completing the main story.",
         "correct_answer": "False",
-        "isCorrect": "False",
         "incorrect_answers": [
           "True"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "False"},
+          { "answerText": "False", "isCorrect": "True"}
         ]
       },
       {
@@ -50,9 +62,12 @@
         "difficulty": "easy",
         "question": "An atom contains a nucleus.",
         "correct_answer": "True",
-        "isCorrect": "True",
         "incorrect_answers": [
           "False"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "True"},
+          { "answerText": "False", "isCorrect": "False"}
         ]
       },
       {
@@ -61,9 +76,12 @@
         "difficulty": "easy",
         "question": "Russia passed a law in 2013 which outlaws telling children that homosexuals exist.",
         "correct_answer": "True",
-        "isCorrect": "True",
         "incorrect_answers": [
           "False"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "True"},
+          { "answerText": "False", "isCorrect": "False"}
         ]
       },
       {
@@ -72,9 +90,12 @@
         "difficulty": "easy",
         "question": "No Game No Life first aired in 2014.",
         "correct_answer": "True",
-        "isCorrect": "True",
         "incorrect_answers": [
           "False"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "True"},
+          { "answerText": "False", "isCorrect": "False"}
         ]
       },
       {
@@ -83,9 +104,12 @@
         "difficulty": "easy",
         "question": "Pink Venom is Twice's new music.",
         "correct_answer": "False",
-        "isCorrect": "False",
         "incorrect_answers": [
           "True"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "False"},
+          { "answerText": "False", "isCorrect": "True"}
         ]
       },
       {
@@ -94,9 +118,12 @@
         "difficulty": "easy",
         "question": "Linux was first created as an alternative to Windows XP.",
         "correct_answer": "False",
-        "isCorrect": "False",
         "incorrect_answers": [
           "True"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "False"},
+          { "answerText": "False", "isCorrect": "True"}
         ]
       },
       {
@@ -105,9 +132,12 @@
         "difficulty": "easy",
         "question": "Superman is a marvel character",
         "correct_answer": "False",
-        "isCorrect": "False",
         "incorrect_answers": [
           "True"
+        ],
+        "answerOptions": [
+          { "answerText": "True", "isCorrect": "False"},
+          { "answerText": "False", "isCorrect": "True"}
         ]
       }
     ]

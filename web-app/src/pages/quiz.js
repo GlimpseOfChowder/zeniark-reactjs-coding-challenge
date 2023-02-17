@@ -51,7 +51,7 @@ export default function Quiz() {
             <ol className='lists'>
             {
               results.map(record => {
-                return(  //trying to conditionally style inline css if true / false = <span style={{color: isTrueFalse ? "#4fbd1b" : "#e04e10;"}}>           
+                return(  //trying to conditionally style inline css for true / false <span style={{color: isTrueFalse ? "#4fbd1b" : "#e04e10;"}}>           
                   <li>{record.question}
                     <h5 className='list'>The correct answer is<span style={{color: "#085696"}}>{record.correct_answer}</span>.</h5>
                   </li>
